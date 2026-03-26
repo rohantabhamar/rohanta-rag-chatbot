@@ -13,13 +13,9 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 COPY src/ ./src/
 COPY scripts/ ./scripts/
-COPY faiss_index/ ./faiss_index/
 COPY my_data.txt .
 
-# HuggingFace Spaces requires port 7860
 EXPOSE 7860
 
-CMD ["streamlit", "run", "src/ui/app.py", \
-     "--server.port=7860", \
-     "--server.address=0.0.0.0", \
-     "--server.headless=true"]
+# Build FAISS index first, then start the app
+CMD ["sh", "-c", "python scripts/ingest.py --input my_data.txt && streamlit run src/ui/app.py --server.port=7860 --server.address=0.0.0.0 --server.headless=true"]
