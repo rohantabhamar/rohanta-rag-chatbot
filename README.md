@@ -4,8 +4,9 @@ emoji: 🤖
 colorFrom: blue
 colorTo: indigo
 sdk: docker
+app_port: 7860
 pinned: false
 ---
 
 # Rohanta's RAG Chatbot
-Powered by Groq (Llama3) + FAISS + LangChain + Streamlit
+Powered by Groq + FAISS + LangChain + Streamlit
