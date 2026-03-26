@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "rohanta-rag-chatbot"
+version = "1.0.0"
+description = "Production-grade RAG chatbot — LangChain + FAISS + HuggingFace + Streamlit"
+authors = ["Rohanta Bhamare <rohantabhamare22@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# ── Core LangChain ────────────────────────────────────────────────────────────
+langchain = "^0.3"
+langchain-core = "^0.3"
+langchain-community = "^0.3"
+langchain-huggingface = "^0.1"
+langchain-text-splitters = "^0.3"
+
+# ── Vector Store ──────────────────────────────────────────────────────────────
+faiss-cpu = "^1.8"
+
+# ── Embeddings & LLM ─────────────────────────────────────────────────────────
+sentence-transformers = "^3.0"
+huggingface-hub = "^0.24"
+
+# ── API ───────────────────────────────────────────────────────────────────────
+fastapi = "^0.115"
+uvicorn = {extras = ["standard"], version = "^0.30"}
+pydantic = "^2.7"
+pydantic-settings = "^2.3"
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit = "^1.36"
+
+# ── Config ────────────────────────────────────────────────────────────────────
+python-dotenv = "^1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+pytest-asyncio = "^0.23"
+httpx = "^0.27"          # Required by FastAPI TestClient
+mypy = "^1.10"
+ruff = "^0.5"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
