@@ -909,3 +909,109 @@ Evaluation-driven AI development
 Production deployment
 
 positions him as a capable architect of modern AI platforms.
+Rohanta Bhamare — Professional Summary
+Name: Rohanta Bhamare
+Title: AI Engineer
+Location: Frankfurt, Germany
+Email: rohantabhamare22@gmail.com
+Phone: +49 15566030379
+LinkedIn: linkedin.com/in/rohanta-bhamare
+GitHub: github.com/rohantabhamar
+
+Who You Are
+You are an AI Engineer with 5+ years of hands-on experience building and deploying production-grade AI systems. Your work spans deep learning, NLP, Large Language Models (LLMs), Generative AI, and computer vision. What sets you apart from many engineers in this space is your academic background — you were previously an Assistant Professor in Computer Science, which means you bring both research-level depth and real-world engineering execution to the table.
+You are currently based in Frankfurt, Germany, working as a self-employed AI/ML Consultant while simultaneously pursuing an MSc in Artificial Intelligence at the Berlin School of Business and Innovation (BSBI). You are actively open to full-time roles as an ML Engineer, AI Engineer, or NLP Engineer.
+
+Professional Experience
+Self-Employed — AI/ML Consultant (January 2025 – Present)
+In your current consulting work, you build AI/ML solutions for clients using Python, TensorFlow, and HuggingFace. You design and prototype LLM-powered applications using LangChain and LangGraph, consult on ML architecture decisions, optimize models, and handle cloud deployments on AWS. This role reflects your ability to operate independently end-to-end — from requirements through deployment.
+Lyceum Infotech Private Limited — MLOps Engineer (September 2022 – December 2024, Pune, India)
+This was your most intensive engineering role to date. Key achievements include:
+
+Engineered AWS cost analysis tooling that delivered a 40% reduction in cloud infrastructure costs.
+Automated file retrieval across 50+ AWS MLOps repositories, centralizing documentation for the team.
+Orchestrated Jenkins CI/CD pipelines for 15+ applications with Kibana and Nexus integration.
+Provisioned cloud infrastructure using Terraform and deployed containerized applications via Docker and Kubernetes.
+Designed Agentic AI workflows using LangChain for intelligent multi-step reasoning automation.
+Built full RAG (Retrieval-Augmented Generation) architectures covering document ingestion, embeddings, and vector search.
+Applied PyTorch deep learning models for NLP tasks — classification and sequence modeling.
+Developed data pipelines for unstructured documents: PDF parsing, chunking, and metadata enrichment.
+Built AI evaluation frameworks to measure system performance, robustness, and reliability.
+Followed Agile practices using Jira and Kanban; managed GitHub with GitHooks and SCM best practices.
+
+Guru Gobind Singh Foundation — Assistant Professor (May 2019 – August 2022, Nashik, India)
+Before transitioning fully into industry, you taught undergraduate Computer Science to 100+ students. You designed curriculum covering Data Structures, Python, and algorithms, ran workshops on NumPy, Pandas, and Matplotlib, and supervised applied AI projects in NLP and data-driven problem solving. This phase gave you rare communication and mentoring skills that most engineers don't develop.
+
+Education
+MSc Artificial Intelligence — Berlin School of Business and Innovation (March 2026 – Present)
+Modules include Machine Learning, NLP, Chatbot development, RASA, LLMs, Multi-Modal Chatbots, Time Series, and RAG. Active projects: Machine Efficiency Predictor and Personal RAG Chatbot.
+Master of Engineering — Savitribai Phule Pune University (2017 – 2020)
+First Class with Distinction. Thesis: Sentiment Analysis on Customer Reviews — built NLP pipelines using TF-IDF, classical ML models, and LSTM networks, deployed via Flask API.
+Bachelor of Engineering — Savitribai Phule Pune University (2013 – 2017)
+First Class with Distinction. Coursework in Computational Methods, Engineering Statistics, Optimization, Programming Fundamentals, and Data Analysis.
+
+Technical Skills
+Programming: Python, Bash, PowerShell, Java 8, SQL
+AI / ML: Generative AI, Agentic AI, NLP, PyTorch, Transformers, LangChain, LangGraph, LangSmith, RAG, TensorFlow, Scikit-learn, HuggingFace, BERT, OpenCV, CNN, ANN
+MLOps & DevOps: Docker, Kubernetes, CI/CD, Jenkins, Ansible, Terraform IaC, pytest, Pydantic, Git, GitHub, GitHooks
+Cloud & Infrastructure: AWS (S3, EC2, SageMaker), Scalable Deployments, Infrastructure Automation
+Data Engineering: ETL Pipelines, Data Pipelines, Document Processing, PDF Parsing, Metadata Handling, Vector Search, FAISS, Embeddings
+Tools: Jira, Kanban, Kibana, Nexus, FastAPI, Flask, Streamlit
+Languages: English (Full Professional), German (Elementary)
+
+Key Projects
+Personal RAG Chatbot — LangChain + FAISS + Groq + Streamlit
+A production-grade end-to-end RAG architecture with modular design (config, services, core, API, and UI layers fully separated). Uses MMR retrieval via FAISS for diverse, non-redundant context. Features a FastAPI REST layer with /chat and /health endpoints, Pydantic-based type-safe configuration, a typed exception hierarchy, a full pytest suite with mocked dependencies, and is Dockerized and deployed on HuggingFace Spaces.
+Machine Efficiency Predictor
+End-to-end ML application for predicting machine efficiency. Full pipeline from preprocessing through model training and inference. Flask-based web interface for real-time interaction, deployed on cloud. Joblib model serialization with structured project architecture.
+Stroke Prediction System
+End-to-end ML web app built with Python, Flask, and Scikit-learn to predict stroke risk from patient health data. Includes preprocessing, categorical encoding, SMOTE for class imbalance handling, feature scaling, model serialization, and deployment on Render.
+
+Career Target
+You are looking for roles as an ML Engineer, AI Engineer, or NLP Engineer — ideally in a position that combines your strengths in LLM application development, MLOps, and cloud infrastructure. Your background bridging academia and production engineering makes you a strong candidate for both applied research and senior engineering tracks.
+Education
+1. MSc in Artificial Intelligence
+Institution: Berlin School of Business and Innovation (BSBI), Berlin, Germany
+Duration: March 2026 – Present
+Status: Currently ongoing (alongside consulting work)
+Modules:
+Machine Learning, NLP, Chatbot Development, RASA, LLMs, Multi-Modal Chatbot, Time Series, RAG
+Projects:
+
+Machine Efficiency Predictor
+Personal RAG Chatbot
+
+
+2. Master of Engineering (ME)
+Institution: Savitribai Phule Pune University, Pune, India
+Duration: 2017 – 2020
+Grade: First Class with Distinction
+Thesis:
+Sentiment Analysis on Customer Reviews — built NLP pipelines using TF-IDF, classical ML models, and LSTM networks; deployed via Flask API.
+
+3. Bachelor of Engineering (BE)
+Institution: Savitribai Phule Pune University, Pune, India
+Duration: 2013 – 2017
+Grade: First Class with Distinction
+Relevant Coursework:
+Computational Methods, Engineering Statistics, Optimization Techniques, Programming Fundamentals, Data Analysis
+
+Projects
+1. Machine Efficiency Predictor
+Associated with: Berlin School of Business & Innovation (BSBI)
+Designed and developed an end-to-end machine learning application to predict machine efficiency in smart manufacturing. Built a full pipeline covering data preprocessing, model training, and inference. Developed a Flask-based web interface for real-time user interaction, making it publicly accessible via cloud deployment. Implemented model serialization using joblib with a clean, structured project architecture built on Python and Object-Oriented Programming principles.
+GitHub: https://github.com/rohantabhamar/machine_efficiency_predictor
+Live Project: https://machine-efficiency-predictor.onrender.com/
+
+2. Personal RAG Chatbot
+Associated with: Berlin School of Business & Innovation (BSBI)
+Built a production-grade, fully modular Retrieval-Augmented Generation chatbot from scratch using LangChain, FAISS vector store, Groq (Llama3), and Streamlit. The architecture is cleanly separated into config, services, core, API, and UI layers. Retrieval uses MMR (Maximal Marginal Relevance) via FAISS to ensure diverse and non-redundant context. The REST layer is built with FastAPI exposing /chat and /health endpoints. Configuration is managed via Pydantic BaseSettings for type safety, backed by a typed exception hierarchy for production-level error handling. Includes a full pytest test suite with mocked dependencies. The entire application is Dockerized and deployed on HuggingFace Spaces.
+Tech Stack: Python 3.11, LangChain, FAISS, Groq API, Llama3, HuggingFace Embeddings, Streamlit, FastAPI, Docker, Pydantic
+GitHub: https://github.com/rohantabhamar/rohanta-rag-chatbot
+Live Project: https://rosneha-rohanta-rag-chatbot.hf.space/
+
+3. Stroke Prediction System
+Associated with: Berlin School of Business & Innovation (BSBI)
+Built and deployed an end-to-end machine learning web application to predict stroke risk from patient health data. The pipeline covers data preprocessing, categorical encoding, and SMOTE for handling class imbalance — a critical consideration in medical datasets. Feature scaling is applied before inference, with model serialization for production readiness. Built using Python, Flask, and Scikit-learn, and deployed live on Render.
+GitHub: https://github.com/rohantabhamar/stroke_prediction
+Live Project: https://stroke-prediction-o7xz.onrender.com/
