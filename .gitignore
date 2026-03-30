@@ -17,8 +17,6 @@ build/
 venv/
 env/
 
-# FAISS index (large binary files — rebuild with ingest.py)
-faiss_index/
 
 # Streamlit
 .streamlit/
