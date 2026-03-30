@@ -5,8 +5,8 @@ langchain-community>=0.3,<0.4
 langchain-huggingface>=0.1,<0.2
 langchain-text-splitters>=0.3,<0.4
 langchain-groq>=0.2,<0.3
-numpy<2.0
-torch==2.2.2+cpu
+numpy>=1.26.4,<2.0
+torch==2.5.1
 transformers==4.40.0
 
 # Vector Store
