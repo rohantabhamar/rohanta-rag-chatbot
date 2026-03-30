@@ -5,6 +5,8 @@ langchain-community>=0.3,<0.4
 langchain-huggingface>=0.1,<0.2
 langchain-text-splitters>=0.3,<0.4
 langchain-groq>=0.2,<0.3
+
+# Numeric / ML Core
 numpy>=1.26.4,<2.0
 torch==2.5.1
 transformers==4.40.0
@@ -24,8 +26,7 @@ pydantic>=2.7,<3.0
 pydantic-settings>=2.3,<3.0
 
 # UI
-streamlit>=1.36
+streamlit>=1.36,<2.0
 
 # Config
 python-dotenv>=1.0,<2.0
-

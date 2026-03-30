@@ -3,7 +3,8 @@ title: Rohanta RAG Chatbot
 emoji: 🤖
 colorFrom: blue
 colorTo: indigo
-sdk: docker
-app_port: 7860
+sdk: streamlit
+app_file: src/ui/app.py
+python_version: "3.11"
 pinned: false
 ---
