@@ -16,13 +16,10 @@ RUN pip install --no-cache-dir --upgrade pip \
 COPY src/ ./src/
 COPY scripts/ ./scripts/
 COPY my_data.txt .
+COPY start.sh .
 
-# Run ingestion at BUILD time so index is baked into the image
-RUN python scripts/ingest.py --input my_data.txt
+RUN chmod +x start.sh
 
 EXPOSE 7860
 
-CMD ["streamlit", "run", "src/ui/app.py", \
-     "--server.port=7860", \
-     "--server.address=0.0.0.0", \
-     "--server.headless=true"]
+CMD ["/bin/bash", "start.sh"]
