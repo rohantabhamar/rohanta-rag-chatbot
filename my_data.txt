@@ -44,7 +44,7 @@ EDUCATION
 Degree: MSc in Artificial Intelligence
 Institution: Berlin School of Business and Innovation (BSBI), Berlin, Germany
 Duration: March 2026 to Present
-Status: Currently ongoing alongside consulting work
+Status: Currently ongoing alongside consulting work. No grade assigned yet as the degree is in progress.
 Modules: Machine Learning, NLP, Chatbot Development, RASA, LLMs, Multi-Modal Chatbot, Time Series, RAG
 Projects: Machine Efficiency Predictor, Personal RAG Chatbot
 
@@ -58,85 +58,68 @@ Degree: Bachelor of Engineering (BE)
 Institution: Savitribai Phule Pune University, Pune, India
 Duration: 2013 to 2017
 Grade: First Class with Distinction, 70%
-Relevant Coursework: Computational Methods, Engineering Statistics, Optimization Techniques, Programming Fundamentals, Data Analysis
 
-Additional Academic Records:
+Secondary Education:
 SSC (Secondary School Certificate): 82%
 HSC (Higher Secondary Certificate): 57%
 
 
-TECHNICAL SKILLS
+COMPLETE TECHNICAL SKILLS
 
-Programming Languages: Python, Bash, PowerShell, Java 8, SQL
-
-AI and Machine Learning: Generative AI, Agentic AI, NLP, PyTorch, Transformers, LangChain, LangGraph, LangSmith, RAG, TensorFlow, Scikit-learn, HuggingFace, BERT, OpenCV, CNN, ANN
-
-MLOps and DevOps: Docker, Kubernetes, CI/CD, Jenkins, Ansible, Terraform IaC, pytest, Clean Code, Pydantic, Git, GitHub, GitHooks
-
-Cloud and Infrastructure: AWS S3, AWS EC2, AWS SageMaker, Scalable Deployments, Infrastructure Automation
-
-Data Engineering: ETL Pipelines, Data Pipelines, Document Processing, PDF Parsing, Metadata Handling, Vector Search, FAISS, Embeddings
-
-Tools and Frameworks: Jira, Kanban, Kibana, Nexus, FastAPI, Flask, Streamlit
-
-Soft Skills: Adaptability, Continuous Learning, Empathy, Stakeholder Management
-
-Languages: English (Full Professional), German (Elementary)
+Programming Languages: Python (primary), SQL, Bash
+Deep Learning Frameworks: PyTorch, TensorFlow, Keras
+LLM and GenAI: LangChain, LangGraph, HuggingFace Transformers, OpenAI API, Groq API, Llama3, RAG (Retrieval-Augmented Generation), Prompt Engineering, Agents
+Vector Databases: FAISS, Chroma
+Embeddings: sentence-transformers/all-MiniLM-L6-v2, HuggingFace Sentence Transformers, OpenAI Embeddings
+NLP: spaCy, NLTK, TF-IDF, Word2Vec, BERT, text classification, sequence modeling, named entity recognition
+MLOps and DevOps: Docker, Kubernetes, Terraform, Jenkins CI/CD, Kibana, Nexus, GitHub Actions, GitHooks
+Cloud: AWS (S3, EC2, SageMaker, Lambda), cloud cost optimization
+APIs and Backend: FastAPI, Flask, Streamlit, REST APIs, async programming, Pydantic
+Data Engineering: Pandas, NumPy, Matplotlib, Scikit-learn, PDF parsing, chunking, metadata enrichment
+Testing and Quality: pytest, pytest-asyncio, MyPy, Ruff, clean code, OOP
+Project Management: Jira, Kanban, Agile
 
 
-PROJECTS
+PERSONAL RAG CHATBOT — TECHNICAL ARCHITECTURE
+
+This chatbot (rohanta_rag) is built by Rohanta Bhamare as a personal AI assistant.
+
+LLM: Groq API with Llama3 model (llama-3.1-8b-instant)
+Embedding Model: sentence-transformers/all-MiniLM-L6-v2 via HuggingFace Sentence Transformers
+Vector Store: FAISS (Facebook AI Similarity Search) with MMR (Maximal Marginal Relevance) retrieval
+Retrieval Strategy: MMR with top-k=8, lambda=0.6 for diversity-relevance balance
+Memory: Full conversation history with safe truncation at 6000 characters
+Query Expansion: Custom keyword expansion map for vague queries (e.g. "current role", "last job", "skills")
+Condense Step: Follow-up questions are rewritten as standalone questions before retrieval
+Framework: LangChain with RunnableLambda, StrOutputParser, PromptTemplate
+Frontend: Streamlit with dark theme, session stats sidebar
+Deployment: HuggingFace Spaces (live), also runs locally on localhost:8501
+Knowledge Base: Plain text document (my_data.txt) chunked at 200 tokens with 50 token overlap
+
+
+DEPLOYED PROJECTS
 
 Project: Personal RAG Chatbot
-Associated with: Berlin School of Business and Innovation (BSBI)
-Tech Stack: Python 3.11, LangChain, FAISS, Groq API, Llama3, HuggingFace Embeddings, Streamlit, FastAPI, Docker, Pydantic
-GitHub: https://github.com/rohantabhamar/rohanta-rag-chatbot
-Live Project: https://rosneha-rohanta-rag-chatbot.hf.space/
-
-Rohanta built a production-grade, fully modular Retrieval-Augmented Generation chatbot from scratch. The architecture is cleanly separated into config, services, core, API, and UI layers. Retrieval uses Max Marginal Relevance (MMR) via FAISS to ensure diverse and non-redundant context. The REST layer is built with FastAPI exposing /chat and /health endpoints. Configuration is managed via Pydantic BaseSettings for type safety. The system includes a typed exception hierarchy for production-level error handling and a full pytest test suite with mocked dependencies. The entire application is Dockerized and deployed on HuggingFace Spaces.
+URL: Available on HuggingFace Spaces
+Stack: Python, LangChain, FAISS, Groq API, Llama3, all-MiniLM-L6-v2, Streamlit, HuggingFace
+Description: A personal AI assistant chatbot built using RAG architecture. Answers questions about Rohanta's professional background by retrieving relevant chunks from a knowledge base and generating grounded answers using Llama3 via Groq.
 
 Project: Machine Efficiency Predictor
-Associated with: Berlin School of Business and Innovation (BSBI)
-Tech Stack: Python, Flask, Scikit-learn, Joblib
-GitHub: https://github.com/rohantabhamar/machine_efficiency_predictor
-Live Project: https://machine-efficiency-predictor.onrender.com/
-
-Rohanta designed and developed an end-to-end machine learning application to predict machine efficiency in smart manufacturing. He built a full pipeline covering data preprocessing, model training, and inference. He developed a Flask-based web interface for real-time user interaction, making it publicly accessible via cloud deployment. Model serialization is handled using joblib with a clean, structured project architecture built on Python and Object-Oriented Programming principles.
+URL: Deployed on Render
+Stack: Python, Scikit-learn, FastAPI, Docker, Render
+Description: A machine learning model that predicts manufacturing machine efficiency. Includes a REST API built with FastAPI and deployed as a containerized service on Render.
 
 Project: Stroke Prediction System
-Associated with: Berlin School of Business and Innovation (BSBI)
-Tech Stack: Python, Flask, Scikit-learn, SMOTE, Render
-GitHub: https://github.com/rohantabhamar/stroke_prediction
-Live Project: https://stroke-prediction-o7xz.onrender.com/
-
-Rohanta built and deployed an end-to-end machine learning web application to predict stroke risk from patient health data. The pipeline covers data preprocessing, categorical encoding, and SMOTE for handling class imbalance, which is a critical consideration in medical datasets. Feature scaling is applied before inference, with model serialization for production readiness. The application is deployed live on Render.
+URL: https://stroke-prediction-o7xz.onrender.com/
+Stack: Python, Flask, Scikit-learn, SMOTE, Render
+Description: A classification model that predicts stroke risk from patient health data. Uses SMOTE for class imbalance handling. Deployed live on Render.
 
 
-LLM ENGINEERING EXPERTISE
+RAG SYSTEM DESIGN EXPERTISE
 
-Rohanta has deep practical and theoretical understanding of transformer-based architectures that power modern Large Language Models. Modern LLMs are built on the transformer architecture, which relies on self-attention mechanisms to model contextual relationships between tokens within sequences of text. Through self-attention, each token in a sequence can attend to every other token, enabling the model to understand long-range dependencies in language. He understands how attention weights are computed, how positional encodings provide sequence order awareness, and how decoder-only architectures such as GPT-style and Mistral models generate text autoregressively. He understands the internal mechanics of these architectures including token embeddings, attention heads, feed-forward networks, layer normalization, and residual connections.
+Rohanta has deep expertise in Retrieval-Augmented Generation (RAG) system design. RAG systems combine document retrieval with LLM generation to produce grounded, factual answers. Key components he has built include: document ingestion pipelines, text chunking strategies, embedding generation, vector store indexing with FAISS, semantic similarity search, MMR retrieval for diversity, prompt engineering for grounded generation, conversation memory management, and evaluation frameworks for measuring RAG quality.
 
-In practical implementations, he focuses on prompt architecture design, system message engineering, token budgeting, context window optimization, temperature tuning, decoding strategy configuration, structured output enforcement using JSON schemas and Pydantic, function calling workflows, and hallucination mitigation techniques. He has worked with HuggingFace-hosted models including instruction-tuned Mistral models and understands API-level integration, rate limiting, latency optimization, and asynchronous call management for high-throughput systems.
-
-He structures prompts into well-defined layers including system instructions, contextual information, and user queries. This structured approach helps constrain model behavior and improves predictability of generated outputs. Lower temperatures produce deterministic outputs suitable for structured responses, while higher temperatures allow more creative generation when required.
-
-He enforces structured outputs using JSON schemas and Pydantic validation models. This prevents inconsistent model outputs and ensures generated responses conform to expected formats before they are processed by downstream services. Structured output enforcement is critical when LLM outputs feed into downstream automated workflows.
-
-
-RAG ARCHITECTURE EXPERTISE
-
-Retrieval-Augmented Generation is one of Rohanta's primary areas of specialization. RAG addresses two major limitations of traditional large language models, which are hallucination and knowledge cutoff. Because LLMs are trained on static datasets, they may generate incorrect or outdated information when asked about topics beyond their training distribution. RAG systems solve this by retrieving relevant documents from an external knowledge base and injecting them into the prompt context before the language model generates its response. This approach grounds model responses in factual data and dramatically reduces hallucination rates.
-
-Rohanta designs complete end-to-end RAG pipelines covering document ingestion, embedding generation, vector storage, retrieval logic, prompt construction, LLM generation, output validation, and evaluation. Each component is modular and independently maintainable, allowing systems to scale as data volumes increase or architectural requirements evolve.
-
-For document ingestion, he develops pipelines capable of processing PDFs, reports, technical manuals, and internal documentation. These pipelines parse raw documents, extract textual content, preserve metadata, and segment documents using intelligent chunking strategies. He applies recursive text splitting, token-aware segmentation, and overlapping chunk windows to maintain semantic continuity. Overlap windows are particularly important because they prevent important contextual relationships from being lost when documents are segmented into smaller pieces.
-
-For embedding generation, he uses models such as sentence-transformers/all-MiniLM-L6-v2. He understands trade-offs between embedding dimensionality, memory usage, storage requirements, and semantic precision. Higher-dimensional embeddings capture more nuanced semantic relationships but require more computational resources. Lower-dimensional embeddings reduce infrastructure cost but may sacrifice retrieval precision.
-
-For vector storage, he frequently uses FAISS (Facebook AI Similarity Search). FAISS is designed for high-performance nearest neighbor search within large collections of high-dimensional vectors. He configures vector indexing strategies, similarity metrics such as cosine similarity or inner product distance, and top-k retrieval parameters to optimize retrieval performance. Balancing recall and precision is essential to ensure relevant documents are retrieved without overwhelming the LLM with noise.
-
-For advanced retrieval optimization, he experiments with multi-query retrievers, Max Marginal Relevance (MMR), context compression, hybrid vector and metadata search, and query rewriting strategies. MMR prevents redundant documents from occupying the entire context window, ensuring retrieved content covers multiple relevant aspects of the user query. Hybrid retrieval approaches combine semantic vector search with metadata filtering, allowing queries to restrict results by document type, source, or date before performing similarity ranking.
-
-For evaluation, he measures retrieval performance using Recall@k and Precision@k. He evaluates response quality through faithfulness checks and hallucination detection. Faithfulness evaluation checks whether generated responses are fully supported by retrieved context, while hallucination detection identifies claims that cannot be verified within the knowledge base. By integrating evaluation pipelines directly into the development workflow, he ensures RAG systems can be systematically improved over time.
+He understands the tradeoffs between chunk size (smaller chunks improve precision but lose context), retrieval strategies (similarity vs MMR), embedding model quality, and LLM temperature settings. He has implemented query expansion techniques to handle vague or short user queries by mapping them to richer search terms before retrieval.
 
 
 LANGCHAIN AND LANGGRAPH EXPERTISE

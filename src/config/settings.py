@@ -16,7 +16,7 @@ class Settings(BaseSettings):
 
     # ── LLM ───────────────────────────────────────────────────────────────────
     repo_id: str = "llama-3.1-8b-instant"
-    max_new_tokens: int = 512
+    max_new_tokens: int = 1024
     temperature: float = 0.1
 
     # ── Embeddings ────────────────────────────────────────────────────────────
@@ -26,9 +26,9 @@ class Settings(BaseSettings):
     index_dir: str = "faiss_index"
 
     # ── Retrieval ─────────────────────────────────────────────────────────────
-    top_k: int = 5
-    mmr_lambda: float = 0.7
-    search_type: str = "similarity"
+    top_k: int = 8
+    mmr_lambda: float = 0.6
+    search_type: str = "mmr"
 
     # ── Chunking ──────────────────────────────────────────────────────────────
     chunk_size: int = 200
