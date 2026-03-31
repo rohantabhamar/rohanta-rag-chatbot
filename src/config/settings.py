@@ -27,11 +27,11 @@ class Settings(BaseSettings):
 
     # ── Retrieval ─────────────────────────────────────────────────────────────
     top_k: int = 5
-    mmr_lambda: float = 0.8
-    search_type: str = "mmr"
+    mmr_lambda: float = 0.7
+    search_type: str = "similarity"
 
     # ── Chunking ──────────────────────────────────────────────────────────────
-    chunk_size: int = 500
+    chunk_size: int = 200
     chunk_overlap: int = 50
 
     # ── App ───────────────────────────────────────────────────────────────────
