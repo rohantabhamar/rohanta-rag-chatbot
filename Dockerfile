@@ -17,6 +17,12 @@ COPY src/ ./src/
 COPY scripts/ ./scripts/
 COPY my_data.txt .
 
+# Run ingestion at BUILD time so index is baked into the image
+RUN python scripts/ingest.py --input my_data.txt
+
 EXPOSE 7860
 
-CMD ["sh", "-c", "python scripts/ingest.py --input my_data.txt && streamlit run src/ui/app.py --server.port=7860 --server.address=0.0.0.0 --server.headless=true"]
+CMD ["streamlit", "run", "src/ui/app.py", \
+     "--server.port=7860", \
+     "--server.address=0.0.0.0", \
+     "--server.headless=true"]
