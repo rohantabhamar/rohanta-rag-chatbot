@@ -26,9 +26,10 @@ class Settings(BaseSettings):
     index_dir: str = "faiss_index"
 
     # ── Retrieval ─────────────────────────────────────────────────────────────
-    top_k: int = 8
-    mmr_lambda: float = 0.6
+    top_k: int = 6              # final docs passed to LLM
+    mmr_lambda: float = 0.65
     search_type: str = "mmr"
+    rerank_top_n: int = 6       # FlashRank top-n (should match top_k)
 
     # ── Chunking ──────────────────────────────────────────────────────────────
     chunk_size: int = 200

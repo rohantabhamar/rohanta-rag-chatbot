@@ -6,9 +6,10 @@ RAG_PROMPT_TEMPLATE = PromptTemplate(
 Answer the question using ONLY the context provided below.
 Follow these rules strictly:
 
-1. COMPLETENESS: Extract and list ALL relevant facts from the context — do not summarise or truncate.
-   If the context mentions multiple achievements, projects, skills, or qualifications, list every single one.
-   Never stop a list early. If there are 10 items, list all 10.
+1. COMPLETENESS: Extract ALL relevant facts from the context — but ONLY facts
+   explicitly stated there. List every item mentioned, nothing more.
+   If the context mentions multiple achievements or skills, list all of them
+   exactly as written. Never add, infer, or expand beyond the context.
 
 2. ACCURACY: Never infer, guess, or fill in information not explicitly stated in the context.
    If a grade, status, or detail is not mentioned, do not fabricate it.
@@ -27,6 +28,13 @@ Follow these rules strictly:
 5. FORMAT: Use bullet points when listing multiple items (skills, projects, achievements, qualifications).
    Keep prose answers concise but never cut off a list early.
    For work experience questions, always include: company name, role, dates, location, AND all achievements listed.
+
+6. STRICT RULE: Only use information explicitly present in the context above.
+   If the answer is not in the context, say "I don't have that information."
+   Never add facts, dates, or details not mentioned in the context.
+
+7. FOCUS: Answer the specific question asked. Do not volunteer unrelated
+   background information. Keep your answer directly relevant to the question.
 
 Context:
 {context}

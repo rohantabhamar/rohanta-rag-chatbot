@@ -78,8 +78,10 @@ with st.sidebar:
 
     st.markdown(f'<div class="info-badge">🧠 <b>LLM:</b> {settings.repo_id}</div>', unsafe_allow_html=True)
     st.markdown('<div class="info-badge">📐 <b>Embeddings:</b> all-MiniLM-L6-v2</div>', unsafe_allow_html=True)
-    st.markdown('<div class="info-badge">🗃️ <b>Vector Store:</b> FAISS</div>', unsafe_allow_html=True)
-    st.markdown(f'<div class="info-badge">🔍 <b>Retrieval:</b> MMR (k={settings.top_k})</div>', unsafe_allow_html=True)
+    st.markdown('<div class="info-badge">🗃️ <b>Vector Store:</b> FAISS + BM25</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="info-badge">🔍 <b>Retrieval:</b> Hybrid search + RRF</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="info-badge">🎯 <b>Reranking:</b> FlashRank cross-encoder</div>', unsafe_allow_html=True)
+    st.markdown('<div class="info-badge">📋 <b>Ordering:</b> Lost in the middle</div>', unsafe_allow_html=True)
     st.markdown('<div class="info-badge">🧠 <b>Memory:</b> Full conversation</div>', unsafe_allow_html=True)
 
     st.divider()

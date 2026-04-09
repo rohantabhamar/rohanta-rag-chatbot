@@ -15,7 +15,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.documents import Document
 
 from src.core.prompts import RAG_PROMPT_TEMPLATE, CONDENSE_PROMPT_TEMPLATE
-from src.core.retriever import build_retriever
+from src.core.retriever import advanced_retrieve
 from src.services import VectorStoreService, LLMService
 from src.utils import get_logger
 
@@ -166,10 +166,15 @@ def build_rag_chain(
     """
     logger.info("Assembling RAG chain with full memory + query expansion...")
 
-    vector_store = vector_store_service.load()
-    retriever    = build_retriever(vector_store)
-    chat_model   = llm_service.get_chat_model()
-    parser       = StrOutputParser()
+    vector_store  = vector_store_service.load()
+    chat_model    = llm_service.get_chat_model()
+    parser        = StrOutputParser()
+
+    # Load all raw documents for BM25 (needed for hybrid search)
+    all_documents: list[Document] = list(
+        vector_store.docstore._dict.values()
+    )
+    logger.info("Loaded %d document chunks for BM25", len(all_documents))
 
     def condense_question(inputs: dict) -> str:
         """Rewrite a follow-up into a standalone question. Skip if no history."""
@@ -216,8 +221,8 @@ def build_rag_chain(
             # but use the expanded query for retrieval
             standalone = condense_question(inputs)
 
-        # Step 2 — retrieve + format context
-        docs    = retriever.invoke(search_query)
+        # Step 2 — full advanced retrieval pipeline
+        docs    = advanced_retrieve(search_query, vector_store, all_documents)
         context = _format_docs(docs)
 
         # Step 3 — full conversation history

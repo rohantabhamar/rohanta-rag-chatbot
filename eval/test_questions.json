@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is Rohanta's current role?",
+    "ground_truth": "AI/ML Consultant, self-employed since January 2025"
+  },
+  {
+    "question": "What tech stack does Rohanta use for RAG?",
+    "ground_truth": "Groq Llama3, LangChain, FAISS with MMR retrieval, sentence-transformers/all-MiniLM-L6-v2, Streamlit"
+  },
+  {
+    "question": "Where is Rohanta currently studying?",
+    "ground_truth": "Berlin School of Business and Innovation (BSBI), MSc in AI"
+  },
+  {
+    "question": "Where does Rohanta live?",
+    "ground_truth": "Frankfurt, Germany"
+  },
+  {
+    "question": "What was Rohanta's role at Lyceum Infotech?",
+    "ground_truth": "MLOps Engineer from September 2022 to December 2024"
+  },
+  {
+    "question": "What is Rohanta's GitHub username?",
+    "ground_truth": "rohantabhamar"
+  },
+  {
+    "question": "What deployment platforms has Rohanta used?",
+    "ground_truth": "HuggingFace Spaces and Render"
+  },
+  {
+    "question": "What embedding model does Rohanta use?",
+    "ground_truth": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  {
+    "question": "What is Rohanta's email address?",
+    "ground_truth": "rohantabhamare22@gmail.com"
+  },
+  {
+    "question": "What vector store does Rohanta use in the RAG chatbot?",
+    "ground_truth": "FAISS with MMR retrieval"
+  }
+]

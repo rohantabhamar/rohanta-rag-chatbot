@@ -17,8 +17,8 @@ build/
 venv/
 env/
 
-# Streamlit
-.streamlit/
+# Streamlit (keep config.toml for HuggingFace deployment)
+# .streamlit/
 
 # Testing
 .pytest_cache/
