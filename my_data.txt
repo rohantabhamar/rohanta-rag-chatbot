@@ -43,7 +43,7 @@ EDUCATION
 
 Degree: MSc in Artificial Intelligence
 Institution: Berlin School of Business and Innovation (BSBI), Berlin, Germany
-Duration: March 2026 to Present
+Duration: March 2025 to Present
 Status: Currently ongoing alongside consulting work. No grade assigned yet as the degree is in progress.
 Modules: Machine Learning, NLP, Chatbot Development, RASA, LLMs, Multi-Modal Chatbot, Time Series, RAG
 Projects: Machine Efficiency Predictor, Personal RAG Chatbot
