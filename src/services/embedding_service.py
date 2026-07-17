@@ -27,13 +27,16 @@ class EmbeddingService:
     def get_embeddings(self) -> HuggingFaceEmbeddings:
         """Return (and lazily initialise) the embedding model."""
         if self._embeddings is None:
+            print(f">>> [DEBUG] Loading embedding model: {self._model_name}", flush=True)
             logger.info("Loading embedding model: %s", self._model_name)
             try:
                 self._embeddings = HuggingFaceEmbeddings(
                     model_name=self._model_name
                 )
+                print(">>> [DEBUG] Embedding model loaded successfully.", flush=True)
                 logger.info("Embedding model loaded successfully.")
             except Exception as exc:
+                print(f">>> [DEBUG] Embedding model FAILED to load: {exc}", flush=True)
                 raise EmbeddingError(
                     f"Failed to load embedding model '{self._model_name}': {exc}"
                 ) from exc
